@@ -55,9 +55,4 @@ public class User {
 	@Column(name = "update_date", nullable = false)
 	private Date updateDate;
 
-	@Setter(AccessLevel.NONE)
-	@UpdateTimestamp
-	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "delete_date", nullable = false)
-	private Date deleteDate;
 }
